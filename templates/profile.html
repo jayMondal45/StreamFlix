@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix - Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/auth.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container-fluid">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="{{ url_for('index') }}" class="logo">STREAMFLIX</a>
+                    <nav class="desktop-nav">
+                        <ul>
+                            <li><a href="{{ url_for('profile') }}">Profile</a></li>
+                            <li><a href="{{ url_for('settings') }}">Setting</a></li>
+                            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="user-profile-container">
+                        <div class="nav-item user-profile-trigger" id="userProfileTrigger">
+                            <img src="{{ url_for('static', filename='uploads/' + user.profile_picture) if user.profile_picture != 'default.jpg' else 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80' }}"
+                                alt="User" loading="lazy">
+                            <i class="fas fa-caret-down" id="dropdownArrow"></i>
+                        </div>
+                        <div class="user-dropdown" id="userDropdown">
+                            <a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a>
+                            <a href="{{ url_for('settings') }}"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-messages">
+        {% for category, message in messages %}
+        <div class="flash-message flash-{{ category }}">
+            {{ message }}
+            <button class="flash-close">&times;</button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <div class="mobile-nav-overlay"></div>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <div class="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <div class="mobile-user-section">
+            <div class="mobile-user-info">
+                <img src="{{ url_for('static', filename='uploads/' + user.profile_picture) if user.profile_picture != 'default.jpg' else 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80' }}"
+                    alt="User" loading="lazy">
+                <div>
+                    <h4>{{ user.name }}</h4>
+                    <p>{{ user.subscription }} Member</p>
+                </div>
+            </div>
+            <div class="mobile-user-links">
+                <a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a>
+                <a href="{{ url_for('settings') }}"><i class="fas fa-cog"></i> Settings</a>
+                <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <div class="profile-avatar">
+                <img src="{{ url_for('static', filename='uploads/' + user.profile_picture) if user.profile_picture != 'default.jpg' else 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80' }}"
+                    alt="Profile Picture">
+                <div class="profile-status">
+                    <span class="status-indicator active"></span>
+                    Online
+                </div>
+            </div>
+            <div class="profile-info">
+                <h1>{{ user.name }}</h1>
+                <p class="profile-email">{{ user.email }}</p>
+                <div class="profile-badges">
+                    <span class="badge badge-primary">{{ user.subscription }} Member</span>
+                    <span class="badge badge-secondary">Member since {{ user.created_at.strftime('%B %Y') }}</span>
+                </div>
+            </div>
+            <div class="profile-stats">
+                <div class="stat-item">
+                    <div class="stat-value">{% if user.watchlist %}{{ user.watchlist|from_json|length }}{% else %}0{%
+                        endif %}</div>
+                    <div class="stat-label">In Watchlist</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">{% if user.watch_history %}{{ user.watch_history|from_json|length }}{% else
+                        %}0{% endif %}</div>
+                    <div class="stat-label">Watched</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">24</div>
+                    <div class="stat-label">Hours Watched</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-content">
+            <div class="profile-section">
+                <h2><i class="fas fa-history"></i> Recently Watched</h2>
+                <div class="watched-grid">
+                    {% if user.watch_history %}
+                    {% for movie in user.watch_history|from_json %}
+                    <div class="watched-item">
+                        <img src="{{ movie.image }}" alt="{{ movie.title }}">
+                        <div class="watched-info">
+                            <h4>{{ movie.title }}</h4>
+                            <p>{{ movie.duration }} • {{ movie.genre }}</p>
+                            <div class="watched-progress">
+                                <div class="progress-bar" style="width: {{ movie.progress }}%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <p class="empty-state">No recently watched content</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2><i class="fas fa-bookmark"></i> Watchlist</h2>
+                <div class="watchlist-grid">
+                    {% if user.watchlist %}
+                    {% for movie in user.watchlist|from_json %}
+                    <div class="watchlist-item">
+                        <img src="{{ movie.image }}" alt="{{ movie.title }}">
+                        <div class="watchlist-overlay">
+                            <button class="btn-play"><i class="fas fa-play"></i></button>
+                            <button class="btn-remove"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="watchlist-info">
+                            <h5>{{ movie.title }}</h5>
+                            <p>{{ movie.rating }} • {{ movie.duration }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <p class="empty-state">Your watchlist is empty</p>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="profile-section">
+                <h2><i class="fas fa-tags"></i> Favorite Genres</h2>
+                <div class="genres-list">
+                    <span class="genre-tag">Action</span>
+                    <span class="genre-tag">Drama</span>
+                    <span class="genre-tag">Sci-Fi</span>
+                    <span class="genre-tag">Comedy</span>
+                    <span class="genre-tag">Thriller</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // User dropdown functionality
+        function setupUserDropdown() {
+            const userTrigger = document.getElementById('userProfileTrigger');
+            const userDropdown = document.getElementById('userDropdown');
+            const dropdownArrow = document.getElementById('dropdownArrow');
+
+            if (!userTrigger || !userDropdown) return;
+
+            userDropdown.style.display = 'none';
+
+            userTrigger.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                if (userDropdown.style.display === 'block') {
+                    userDropdown.style.display = 'none';
+                    userTrigger.classList.remove('active');
+                    if (dropdownArrow) dropdownArrow.style.transform = 'rotate(0deg)';
+                } else {
+                    const triggerRect = userTrigger.getBoundingClientRect();
+                    userDropdown.style.cssText = `
+                        position: fixed !important;
+                        top: ${triggerRect.bottom + 5}px !important;
+                        right: ${window.innerWidth - triggerRect.right}px !important;
+                        background: #141414 !important;
+                        border: 2px solid #e50914 !important;
+                        border-radius: 8px !important;
+                        padding: 15px 0 !important;
+                        min-width: 200px !important;
+                        z-index: 1001 !important;
+                        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8), 0 0 20px rgba(229, 9, 20, 0.7) !important;
+                        display: block !important;
+                    `;
+                    userDropdown.style.display = 'block';
+                    userTrigger.classList.add('active');
+                    if (dropdownArrow) dropdownArrow.style.transform = 'rotate(180deg)';
+                }
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!userTrigger.contains(e.target) && !userDropdown.contains(e.target)) {
+                    userDropdown.style.display = 'none';
+                    userTrigger.classList.remove('active');
+                    if (dropdownArrow) dropdownArrow.style.transform = 'rotate(0deg)';
+                }
+            });
+
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape') {
+                    userDropdown.style.display = 'none';
+                    userTrigger.classList.remove('active');
+                    if (dropdownArrow) dropdownArrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        }
+
+        // Flash messages auto-close
+        document.querySelectorAll('.flash-close').forEach(button => {
+            button.addEventListener('click', function () {
+                this.parentElement.remove();
+            });
+        });
+
+        setTimeout(() => {
+            document.querySelectorAll('.flash-message').forEach(msg => {
+                msg.remove();
+            });
+        }, 5000);
+
+        // Initialize dropdown
+        setupUserDropdown();
+
+        // Mobile menu functionality
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const mobileNav = document.querySelector('.mobile-nav');
+        const mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
+        const mobileNavClose = document.querySelector('.mobile-nav-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-user-links a');
+
+        // Function to set active nav based on current page
+        function setActiveNav() {
+            const currentPath = window.location.pathname;
+
+            // Desktop nav
+            const desktopLinks = document.querySelectorAll('.desktop-nav a');
+            desktopLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+
+            // Mobile nav
+            mobileNavLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                } else {
+                    link.classList.remove('active');
+                }
+            });
+        }
+
+        // Toggle mobile menu
+        function toggleMobileMenu() {
+            hamburgerMenu.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            mobileNavOverlay.classList.toggle('active');
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        }
+
+        // Close mobile menu
+        function closeMobileMenu() {
+            hamburgerMenu.classList.remove('active');
+            mobileNav.classList.remove('active');
+            mobileNavOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Event listeners for mobile menu
+        if (hamburgerMenu) {
+            hamburgerMenu.addEventListener('click', toggleMobileMenu);
+        }
+
+        if (mobileNavClose) {
+            mobileNavClose.addEventListener('click', closeMobileMenu);
+        }
+
+        if (mobileNavOverlay) {
+            mobileNavOverlay.addEventListener('click', closeMobileMenu);
+        }
+
+        // Close mobile menu when clicking on a link
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        // Close mobile menu on escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && mobileNav.classList.contains('active')) {
+                closeMobileMenu();
+            }
+        });
+
+        // Set active nav on page load
+        setActiveNav();
+    </script>
+</body>
+
+</html>

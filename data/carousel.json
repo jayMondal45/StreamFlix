@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Game of Thrones",
+    "rating": "⭐ 9.3/10",
+    "genres": ["Fantasy", "Drama", "Adventure"],
+    "duration": "8 Seasons",
+    "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia. An epic tale of power, betrayal, and the struggle for the Iron Throne.",
+    "cast": "Creator: David Benioff, D.B. Weiss | Cast: Emilia Clarke, Kit Harington, Peter Dinklage",
+    "hero_bg": "static/img/Game_of_Thrones.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BN2IzYzBiOTQtNGZmMi00NDI5LTgxMzMtN2EzZjA1NjhlOGMxXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Stranger Things",
+    "rating": "⭐ 8.7/10",
+    "genres": ["Sci-Fi", "Horror", "Drama"],
+    "duration": "4 Seasons",
+    "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl. Set in the 1980s, this thrilling series blends nostalgia with supernatural horror.",
+    "cast": "Creators: The Duffer Brothers | Cast: Millie Bobby Brown, Finn Wolfhard, Winona Ryder",
+    "hero_bg": "static/img/stranger.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjRiMTA4NWUtNmE0ZC00NGM0LWJhMDUtZWIzMDM5ZDIzNTg3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Breaking Bad",
+    "rating": "⭐ 9.5/10",
+    "genres": ["Crime", "Drama", "Thriller"],
+    "duration": "5 Seasons",
+    "description": "A chemistry teacher diagnosed with terminal cancer partners with a former student to manufacture and sell methamphetamine. What begins as a desperate attempt to secure his family's future transforms him into a criminal mastermind.",
+    "cast": "Creator: Vince Gilligan | Cast: Bryan Cranston, Aaron Paul, Anna Gunn",
+    "hero_bg": "static/img/breaking_bad.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmQ4YWMxYjUtNjZmYi00MDQ1LWFjMjMtNjA5ZDdiYjdiODU5XkEyXkFqcGdeQXVyMTMzNDExODE5._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Interstellar",
+    "rating": "⭐ 8.7/10",
+    "genres": ["Sci-Fi", "Drama", "Adventure"],
+    "duration": "2h 49min",
+    "description": "When Earth becomes uninhabitable in the future, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.",
+    "cast": "Director: Christopher Nolan | Cast: Matthew McConaughey, Anne Hathaway, Jessica Chastain, Michael Caine",
+    "hero_bg": "static/img/intersteller.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+  },
+  {
+    "title": "Dark",
+    "rating": "⭐ 8.7/10",
+    "genres": ["Sci-Fi", "Mystery", "Thriller"],
+    "duration": "3 Seasons",
+    "description": "A family saga with a supernatural twist, set in a German town where the disappearance of two young children exposes the relationships among four families and reveals a time-travel conspiracy spanning several generations.",
+    "cast": "Creators: Baran bo Odar, Jantje Friese | Cast: Louis Hofmann, Karoline Eichhorn, Lisa Vicari, Maja Schöne",
+    "hero_bg": "static/img/dark.jpg",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6ApenbR-AZkjJySI-VBzjMJYPWFoqUgCxfkGyvXpCru89imX7jzAdmaDSgEVOY4MIDnR_&s=10"
+  },
+  {
+    "title": "The Dark Knight",
+    "rating": "⭐ 9.0/10",
+    "genres": ["Action", "Crime", "Thriller"],
+    "duration": "2h 32min",
+    "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice and confront his darkest fears.",
+    "cast": "Director: Christopher Nolan | Cast: Christian Bale, Heath Ledger, Aaron Eckhart",
+    "hero_bg": "static/img/the_dark_knight.jpg",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_FMjpg_UX1000_.jpg"
+  }
+]

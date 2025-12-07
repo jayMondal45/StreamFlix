@@ -1,0 +1,442 @@
+[
+  {
+    "title": "The Shawshank Redemption",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDE3ODcxYzMtY2YzZC00NmNlLWJiNDMtZDViZWM2MzIxZDYwXkEyXkFqcGdeQXVyNjAwNDUxODI@._V1_SX300.jpg",
+    "rating": "9.3",
+    "duration": "2h 22m",
+    "age": "R",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Drama"
+  },
+  {
+    "title": "The Godfather",
+    "image": "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "rating": "9.2",
+    "duration": "2h 55m",
+    "age": "R",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Crime"
+  },
+  {
+    "title": "The Dark Knight",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+    "rating": "9.0",
+    "duration": "2h 32m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Action"
+  },
+  {
+    "title": "3 Idiots",
+    "image": "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "rating": "8.4",
+    "duration": "2h 50m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Comedy"
+  },
+  {
+    "title": "12 Angry Men",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWU4N2FjNzYtNTVkNC00NzQ0LTg0MjAtYTJlMjFhNGUxZDFmXkEyXkFqcGdeQXVyNjc1NTYyMjg@._V1_SX300.jpg",
+    "rating": "9.0",
+    "duration": "1h 36m",
+    "age": "Approved",
+    "quality": "HD",
+    "category": "top-ten",
+    "genre": "Drama"
+  },
+  {
+    "title": "Schindler's List",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "rating": "9.0",
+    "duration": "3h 15m",
+    "age": "R",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Biography"
+  },
+  {
+    "title": "Baahubali 2: The Conclusion",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwAZddfdsmgj84MRQyRDfNxl-swkZRxt2IQX3gnLkzHl3EEzyD3dduWibKdNCCqOTyaL3WIw&s=10",
+    "rating": "8.2",
+    "duration": "2h 47m",
+    "age": "13+",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Action"
+  },
+  {
+    "title": "The Lord of the Rings: The Fellowship of the Ring",
+    "image": "https://m.media-amazon.com/images/M/MV5BN2EyZjM3NzUtNWUzMi00MTgxLWI0NTctMzY4M2VlOTdjZWRiXkEyXkFqcGdeQXVyNDUzOTQ5MjY@._V1_SX300.jpg",
+    "rating": "8.9",
+    "duration": "2h 58m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Dangal",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_SX300.jpg",
+    "rating": "8.3",
+    "duration": "2h 41m",
+    "age": "PG",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Biography"
+  },
+  {
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "image": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "rating": "8.7",
+    "duration": "2h 04m",
+    "age": "PG",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Vikram",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVn0y7RuNHnktmebSF6Uf_bv6Ue5ZxMmrRR1I_Yz9Bvs51_P1AMV5ku8qB98PmOVTFK_oh&s=10",
+    "rating": "8.3",
+    "duration": "2h 54m",
+    "age": "16+",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Action"
+  },
+  {
+    "title": "Fight Club",
+    "image": "https://m.media-amazon.com/images/M/MV5BNDIzNDU0YzEtYzE5Ni00ZjlkLTk5ZjgtNjM3NWE4YzA3Nzk3XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+    "rating": "8.8",
+    "duration": "2h 19m",
+    "age": "R",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Drama"
+  },
+  {
+    "title": "Drishyam",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE7T7F4y7gL_rzFbpv48CdEitsaxyJmYYeanPA9DYKLa46KJnW_B2BYPtgj0EbdSEdbw4FfQ&s=10",
+    "rating": "8.2",
+    "duration": "2h 43m",
+    "age": "13+",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Thriller"
+  },
+  {
+    "title": "The Godfather Part II",
+    "image": "https://m.media-amazon.com/images/M/MV5BMWMwMGQzZTItY2JlNC00OWZiLWIyMDctNDk2ZDQ2YjRjMWQ0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "rating": "9.0",
+    "duration": "3h 22m",
+    "age": "R",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Crime"
+  },
+  {
+    "title": "RRR",
+    "image": "https://m.media-amazon.com/images/M/MV5BODUwNDNjYzctODUxNy00ZTA2LWIyYTEtMDc5Y2E5ZjBmNTMzXkEyXkFqcGdeQXVyODE5NzE3OTE@._V1_SX300.jpg",
+    "rating": "7.8",
+    "duration": "3h 07m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "top-ten",
+    "genre": "Action"
+  },
+  {
+    "title": "The Lord of the Rings: The Return of the King",
+    "image": "https://m.media-amazon.com/images/M/MV5BNzA5ZDNlZWMtM2NhNS00NDJjLTk4NDItYTRmY2EwMWZlMTY3XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "rating": "9.0",
+    "duration": "3h 21m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "Pulp Fiction",
+    "image": "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    "rating": "8.9",
+    "duration": "2h 34m",
+    "age": "R",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Crime"
+  },
+  {
+    "title": "Jawan",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3giEteXGggow1hYtpRIuy3bDLO_Z9aoximYp_tuFK0Bb0N_fnmPaChKv1l_mgBxiiOwN3&s=10",
+    "rating": "7.2",
+    "duration": "2h 49m",
+    "age": "13+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Forrest Gump",
+    "image": "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    "rating": "8.8",
+    "duration": "2h 22m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Drama"
+  },
+  {
+    "title": "KGF: Chapter 2",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs5Vo2OulSEXWfroqvIjx0VvYqYjVGLaUHUsfHV7laaYxIQ7qFvkQGD_eao-dt0eIM-JJHag&s=10",
+    "rating": "8.4",
+    "duration": "2h 48m",
+    "age": "16+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Oppenheimer",
+    "image": "https://m.media-amazon.com/images/M/MV5BMDBmYTZjNjUtN2M1MS00MTQ2LTk2ODgtNzc2M2QyZGE5NTVjXkEyXkFqcGdeQXVyNzAwMjU2MTY@._V1_SX300.jpg",
+    "rating": "8.3",
+    "duration": "3h 00m",
+    "age": "R",
+    "quality": "IMAX",
+    "category": "trending",
+    "genre": "Biography"
+  },
+  {
+    "title": "Pathaan",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIOHA0DTAKNAhDRUKyhxR2U6iokt9boztD3ur53XbnoOGkzBm9C-qckStDmlMnJZvYDFAM&s=10",
+    "rating": "6.1",
+    "duration": "2h 26m",
+    "age": "13+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Dune: Part Two",
+    "image": "https://m.media-amazon.com/images/M/MV5BN2QyZGU4ZDctOWMzMy00NTc5LThlOGQtODhmNDI1NmY5YzAwXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_SX300.jpg",
+    "rating": "8.5",
+    "duration": "2h 46m",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "trending",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Leo",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZorcQ8q5HnwPB8MfA2I7-_BLk92pyAYlV5GPh9RvyznAjCBCzHs7LwdNVnJ3eELehoQSk&s=10",
+    "rating": "7.2",
+    "duration": "2h 44m",
+    "age": "16+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Inception",
+    "image": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+    "rating": "8.8",
+    "duration": "2h 28m",
+    "age": "PG-13",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Kantara",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlGRn9XQGPisR-C8rnctHJnPeQTXIyV43e_aBgqXL0HIq3gV0QS5_botr-EZfnA11T72JPLQ&s=10",
+    "rating": "8.2",
+    "duration": "2h 28m",
+    "age": "16+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Gladiator",
+    "image": "https://m.media-amazon.com/images/M/MV5BMDliMmNhNDEtODUyOS00MjNlLTgxODEtN2U3NzIxMGVkZTA1L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+    "rating": "8.5",
+    "duration": "2h 35m",
+    "age": "R",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Tumbbad",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Cc7_JeFsWMofnLhAmAmezUe6xIvM-g6rcHLK0XY-n7bXB488IoY-M-iTqh6cLTCRYTz6&s=10",
+    "rating": "8.2",
+    "duration": "1h 44m",
+    "age": "13+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Horror"
+  },
+  {
+    "title": "The Departed",
+    "image": "https://m.media-amazon.com/images/M/MV5BMTI1MTY2OTIxNV5BMl5BanBnXkFtZTYwNjQ4NjY3._V1_SX300.jpg",
+    "rating": "8.5",
+    "duration": "2h 31m",
+    "age": "R",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Crime"
+  },
+  {
+    "title": "Jailer",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg4IkitIG8cCq4VvLx4JDDrGBhr39RkJpWjru13tywmTexYkBHb65nzwLELUgaMvvpXYl&s=10",
+    "rating": "7.1",
+    "duration": "2h 48m",
+    "age": "16+",
+    "quality": "4K",
+    "category": "trending",
+    "genre": "Action"
+  },
+  {
+    "title": "Avatar: Fire and Ash",
+    "image": "https://m.media-amazon.com/images/M/MV5BYjhiNjBlODctY2ZiOC00YjVlLWFlNzAtNTVhNzM1YjI1NzMxXkEyXkFqcGdeQXVyMjQxNTE1MDA@._V1_SX300.jpg",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Sci-Fi"
+  },
+  {
+    "title": "Mission: Impossible 8",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4CltbhynMNm8Wa9Kzzegsj-c0b8_fbMixTsPM_SzceDr-gMM2oqziu-QybMWHXUghWqW9&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Superman: Legacy",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxGnS5AO1k3OpZnSm3tRpSE6QMwI6nD1wZAcbPrTsNa9FZQcBttmU_WNWdTX2IpZu2Dmca9g&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Thunderbolts",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHwW25lnlRJI4kiwVOcIIzSpq95EpDLajAe4WEeZ-vcbyozX-IU4rXlm0UB623pRccoGGz&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Captain America: Brave New World",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIxIkn7_0YU05hQxPSNNivqBRingNRFQNUjiAsyrs2L04G2MYyqmDGGHSCESudQ1Ju8FLamg&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "The Fantastic Four: First Steps",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLJBESuOsvi8aWujZZXsZwlvl2D-h_6LA9NCDzQ82PJqmAZLPoOxS2rmIJ0RLJXAxQjricGw&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Jurassic World Rebirth",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMD-En_5i2eMnPj2MCzqCdXNxfT1tYqcJ2_5aMDfVyq76b-oP6NMzKIV_0WZXfR9oYp9udRA&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG-13",
+    "quality": "IMAX",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Zootopia 2",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqU-w52lblFgRaE9zJo5hubrfeyRK-O9hkv6pbSQYKoqzmKEupxh9SoPGt2KvwcjuTgO-v&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Animation"
+  },
+  {
+    "title": "How to Train Your Dragon",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLhLTo24-Thdfk9GLYhNV4Z7XgW0tldQDBjxDdF7v75EekpDZ0CWwO5bX3yN0ecYatbHQ-&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Adventure"
+  },
+  {
+    "title": "Snow White",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkzFvrcnn6OQD5e680fSBX_fMiyeCCzxLjzinwOJ8mtsifd2cTXlSWAs0Rw_bl406BdHFL&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "PG",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Fantasy"
+  },
+  {
+    "title": "War 2",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSapJpL_PpzYAOCAGATi0FgAGexDdmAXeIgErt8OS995_j0SDr4F6VcR4tRxth4UqbaWQm52g&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "13+",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Sikandar",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqqbdmhu4e3bVUst-7DTlUA7wSrEeqxNSjKjWc1C8uXHYSMpM7W4N38vMzdE2JzNp6297L&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "13+",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Action"
+  },
+  {
+    "title": "Jolly LLB 3",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvs9Pyu6rsIuNlGUMc2w5fYvJhag-YY_dTgMyOu2JNC8zNhxOPfHn7UyUGaencsJazsu0q&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "13+",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Comedy"
+  },
+  {
+    "title": "Pushpa 2: The Rule",
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPAQigFcssBJaq24TnvsQbwgnVywJ-mLWev97pMYKSjxGXwMou8vDNK_gvdWRI15UyOEZ02A&s=10",
+    "rating": "N/A",
+    "duration": "TBA",
+    "age": "16+",
+    "quality": "4K",
+    "category": "upcoming",
+    "genre": "Action"
+  }
+]

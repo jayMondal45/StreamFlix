@@ -1,0 +1,754 @@
+[
+  {
+    "id": 1,
+    "title": "Stranger Things",
+    "description": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.",
+    "rating": "8.7/10",
+    "year": "2016-2025",
+    "seasons": 5,
+    "episodes": 42,
+    "rank": 1,
+    "image": "https://i.pinimg.com/1200x/03/d5/1a/03d51a0402fee29871e5b104c348d984.jpg",
+    "genres": ["Sci-Fi", "Horror", "Drama", "Mystery"],
+    "seasonsData": {
+      "1": [
+        {
+          "episode": 1,
+          "title": "Chapter One: The Vanishing of Will Byers",
+          "duration": "49m",
+          "image": "https://assets.vogue.com/photos/59ee5bdc66bc9a48abff6cf8/master/w_2560%2Cc_limit/00-story-image-stranger-things.jpg"
+        },
+        {
+          "episode": 2,
+          "title": "Chapter Two: The Weirdo on Maple Street",
+          "duration": "56m",
+          "image": "https://www.nme.com/wp-content/uploads/2016/10/2016_StrangerThings_3_200716-2-1.jpg"
+        },
+        {
+          "episode": 3,
+          "title": "Chapter Three: Holly, Jolly",
+          "duration": "52m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoy0FSO4NLDoiK6Hyu4_inaDgdm5vYjsUFew&s"
+        },
+        {
+          "episode": 4,
+          "title": "Chapter Four: The Body",
+          "duration": "51m",
+          "image": "https://assets.vogue.com/photos/59ee5bdc66bc9a48abff6cf8/master/w_2560%2Cc_limit/00-story-image-stranger-things.jpg"
+        },
+        {
+          "episode": 5,
+          "title": "Chapter Five: The Flea and the Acrobat",
+          "duration": "53m",
+          "image": "https://www.nme.com/wp-content/uploads/2016/10/2016_StrangerThings_3_200716-2-1.jpg"
+        },
+        {
+          "episode": 6,
+          "title": "Chapter Six: The Monster",
+          "duration": "47m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoy0FSO4NLDoiK6Hyu4_inaDgdm5vYjsUFew&s"
+        },
+        {
+          "episode": 7,
+          "title": "Chapter Seven: The Bathtub",
+          "duration": "43m",
+          "image": "https://assets.vogue.com/photos/59ee5bdc66bc9a48abff6cf8/master/w_2560%2Cc_limit/00-story-image-stranger-things.jpg"
+        },
+        {
+          "episode": 8,
+          "title": "Chapter Eight: The Upside Down",
+          "duration": "55m",
+          "image": "https://www.nme.com/wp-content/uploads/2016/10/2016_StrangerThings_3_200716-2-1.jpg"
+        }
+      ],
+      "2": [
+        {
+          "episode": 1,
+          "title": "Chapter One: MADMAX",
+          "duration": "48m",
+          "image": "https://variety.com/wp-content/uploads/2017/10/stranger-things-2.jpg"
+        },
+        {
+          "episode": 2,
+          "title": "Chapter Two: Trick or Treat, Freak",
+          "duration": "56m",
+          "image": "https://s3.r29static.com/bin/entry/f4b/0,0,2000,1050/x,80/2212141/image.jpg"
+        },
+        {
+          "episode": 3,
+          "title": "Chapter Three: The Pollywog",
+          "duration": "51m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2017/10/Millie-Bobby-Brown-as-Eleven-in-Stranger-Things.jpg"
+        },
+        {
+          "episode": 4,
+          "title": "Chapter Four: Will the Wise",
+          "duration": "46m",
+          "image": "https://variety.com/wp-content/uploads/2017/10/stranger-things-2.jpg"
+        },
+        {
+          "episode": 5,
+          "title": "Chapter Five: Dig Dug",
+          "duration": "57m",
+          "image": "https://s3.r29static.com/bin/entry/f4b/0,0,2000,1050/x,80/2212141/image.jpg"
+        },
+        {
+          "episode": 6,
+          "title": "Chapter Six: The Spy",
+          "duration": "52m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2017/10/Millie-Bobby-Brown-as-Eleven-in-Stranger-Things.jpg"
+        },
+        {
+          "episode": 7,
+          "title": "Chapter Seven: The Lost Sister",
+          "duration": "45m",
+          "image": "https://variety.com/wp-content/uploads/2017/10/stranger-things-2.jpg"
+        },
+        {
+          "episode": 8,
+          "title": "Chapter Eight: The Mind Flayer",
+          "duration": "48m",
+          "image": "https://s3.r29static.com/bin/entry/f4b/0,0,2000,1050/x,80/2212141/image.jpg"
+        },
+        {
+          "episode": 9,
+          "title": "Chapter Nine: The Gate",
+          "duration": "62m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2017/10/Millie-Bobby-Brown-as-Eleven-in-Stranger-Things.jpg"
+        }
+      ],
+      "3": [
+        {
+          "episode": 1,
+          "title": "Chapter One: Suzie, Do You Copy?",
+          "duration": "51m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/finn-wolfhard-millie-bobby-brown-stranger-things-season-4-67fcaf8b4e448.jpg?resize=980:*"
+        },
+        {
+          "episode": 2,
+          "title": "Chapter Two: The Mall Rats",
+          "duration": "49m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8L0hE0tC-SSLpDU2aKfEOXmqygWzrWx7ig&s"
+        },
+        {
+          "episode": 3,
+          "title": "Chapter Three: The Case of the Missing Lifeguard",
+          "duration": "52m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/finn-wolfhard-millie-bobby-brown-stranger-things-season-4-67fcaf8b4e448.jpg?resize=980:*"
+        },
+        {
+          "episode": 4,
+          "title": "Chapter Four: The Sauna Test",
+          "duration": "52m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyA_lWEUWM0t_P894MI_cbtgi7Hv_m-cXRaA&s"
+        },
+        {
+          "episode": 5,
+          "title": "Chapter Five: The Flayed",
+          "duration": "55m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8L0hE0tC-SSLpDU2aKfEOXmqygWzrWx7ig&s"
+        },
+        {
+          "episode": 6,
+          "title": "Chapter Six: E Pluribus Unum",
+          "duration": "57m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/finn-wolfhard-millie-bobby-brown-stranger-things-season-4-67fcaf8b4e448.jpg?resize=980:*"
+        },
+        {
+          "episode": 7,
+          "title": "Chapter Seven: The Bite",
+          "duration": "51m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyA_lWEUWM0t_P894MI_cbtgi7Hv_m-cXRaA&s"
+        },
+        {
+          "episode": 8,
+          "title": "Chapter Eight: The Battle of Starcourt",
+          "duration": "78m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt8L0hE0tC-SSLpDU2aKfEOXmqygWzrWx7ig&s"
+        }
+      ],
+      "4": [
+        {
+          "episode": 1,
+          "title": "Chapter One: The Hellfire Club",
+          "duration": "78m",
+          "image": "https://cdn.mos.cms.futurecdn.net/2vQtF6xUjq7edV4DSb7jUh.jpg"
+        },
+        {
+          "episode": 2,
+          "title": "Chapter Two: Vecna's Curse",
+          "duration": "78m",
+          "image": "https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQbjb9XI6V-LAVt55Z-xpC14Jx-Q_qNf3XYb7yUZYvuUzKda64I_bGiC5eUSZoH-PDoPY08kQOoaK-HTqcANHdia_js5TUiutuio_VGbS1x-FcHyFVZEhukp1pY2rOnJ68KvjcRzJYidqOJapMpQUQXlUKko.jpg?r=e2c"
+        },
+        {
+          "episode": 3,
+          "title": "Chapter Three: The Monster and the Superhero",
+          "duration": "63m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/t-6-unit-02910-r-1656604419.jpg?crop=1xw:0.84375xh;0,0.0938xh"
+        },
+        {
+          "episode": 4,
+          "title": "Chapter Four: Dear Billy",
+          "duration": "78m",
+          "image": "https://media.vanityfair.com/photos/59f49b5220586235aaecf93b/master/w_2560%2Cc_limit/wv_publicity_pre_launch_A_still_7.000001.jpeg"
+        },
+        {
+          "episode": 5,
+          "title": "Chapter Five: The Nina Project",
+          "duration": "75m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSs_DCkJBqCibIUr1H0sy4PYXKvl1nhHIaABQ&s"
+        },
+        {
+          "episode": 6,
+          "title": "Chapter Six: The Dive",
+          "duration": "68m",
+          "image": "https://assets-prd.ignimgs.com/2022/07/05/eddie-munson-1657006478785.png"
+        },
+        {
+          "episode": 7,
+          "title": "Chapter Seven: The Massacre at Hawkins Lab",
+          "duration": "98m",
+          "image": "https://ew.com/thmb/O_K4iRkmsHe0X6P-an1eu7ZCt3Q=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Stranger-Things-405-27233387e25e4e8ea21b2a39a28299b8.jpg"
+        },
+        {
+          "episode": 8,
+          "title": "Chapter Eight: Papa",
+          "duration": "85m",
+          "image": "https://www.cnet.com/a/img/resize/205b7aa1b3630c0f995db9f8e913f144da8342ca/hub/2022/06/14/ce2e69f0-4761-4b6b-9831-f466d8df13ec/square-stranger-things-season-4-eleven-dr.jpg?auto=webp&fit=crop&height=675&width=1200"
+        },
+        {
+          "episode": 9,
+          "title": "Chapter Nine: The Piggyback",
+          "duration": "150m",
+          "image": "https://deadline.com/wp-content/uploads/2022/07/Stranger-Things-Sadie-Sink.jpg?w=681&h=383&crop=1"
+        }
+      ],
+      "5": [
+        {
+          "episode": 1,
+          "title": "Chapter One: The Crawl",
+          "duration": "87m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/06/mike-in-stranger-things-season-5-s-teaser.jpg?w=1600&h=1200&fit=crop",
+          "releaseDate": "November 26, 2025"
+        },
+        {
+          "episode": 2,
+          "title": "Chapter Two: The Vanishing of Holly Wheeler",
+          "duration": "82m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/06/mike-in-stranger-things-season-5-s-teaser.jpg?w=1600&h=1200&fit=crop"
+        },
+        {
+          "episode": 3,
+          "title": "Chapter Three: The Turnbow Trap",
+          "duration": "75m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/06/mike-in-stranger-things-season-5-s-teaser.jpg?w=1600&h=1200&fit=crop",
+          "releaseDate": "November 26, 2025"
+        },
+        {
+          "episode": 4,
+          "title": "Chapter Four: Sorcerer",
+          "duration": "55m",
+          "image": "https://deadline.com/wp-content/uploads/2025/07/StrangerThings_S5_0011.jpg?w=800",
+          "releaseDate": "November 26, 2025"
+        },
+        {
+          "episode": 5,
+          "title": "Chapter Five: Shock Jock",
+          "duration": "70m",
+          "image": "https://static0.srcdn.com/wordpress/wp-content/uploads/2025/10/will-byers-looking-angry-and-screaming-in-stranger-things-season-5.jpg?w=1600&h=900&fit=crop",
+          "releaseDate": "December 25, 2025"
+        },
+        {
+          "episode": 6,
+          "title": "Chapter Six: Escape from Camazotz",
+          "duration": "78m",
+          "image": "https://ca-times.brightspotcdn.com/dims4/default/bd2b48c/2147483647/strip/true/crop/2880x1920+0+0/resize/1200x800!/quality/75/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2Faf%2F3d%2F49e787d348c6a5262c5c81a40ade%2Fstrangerthings-strangerthings4-8-00-02-52-15.jpg",
+          "releaseDate": "December 25, 2025"
+        },
+        {
+          "episode": 7,
+          "title": "Chapter Seven: The Bridge",
+          "duration": "85m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/strangerthings-s5-0020-687703b1e2791.jpg?crop=1xw:0.84xh;0,0.00726xh",
+          "releaseDate": "December 25, 2025"
+        },
+        {
+          "episode": 8,
+          "title": "Chapter Eight: The Rightside Up",
+          "duration": "140m",
+          "image": "https://people.com/thmb/rU9NB7cNLUb6YW9ivQFfklyFpN4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():focal(999x0:1001x2)/millie-bobby-brown-stranger-things-103025-9f5ef573378441e6a3e79e792b2d7825.jpg",
+          "releaseDate": "December 31, 2025",
+          "note": "Series Finale - Also releasing in theaters"
+        }
+      ]
+    }
+  },
+  {
+    "id": 2,
+    "title": "Game of Thrones",
+    "description": "Nine noble families fight for control over the lands of Westeros, while an ancient enemy returns after being dormant for millennia.",
+    "rating": "9.2/10",
+    "year": "2011",
+    "seasons": 8,
+    "episodes": 73,
+    "rank": 1,
+    "image": "https://images8.alphacoders.com/403/thumb-1920-403589.png",
+    "genres": ["Fantasy", "Drama", "Adventure", "Action"],
+    "seasonsData": {
+      "1": [
+        {
+          "episode": 1,
+          "title": "Winter Is Coming",
+          "duration": "62m",
+          "image": "https://resizing.flixster.com/ajtANROYYdtHssw6m0iLLlSY9Rw=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8681514_b_v8_aa.jpg"
+        },
+        {
+          "episode": 2,
+          "title": "The Kingsroad",
+          "duration": "56m",
+          "image": "https://static01.nyt.com/images/2011/04/10/arts/THRONES-6/THRONES-6-superJumbo-v2.jpg"
+        },
+        {
+          "episode": 3,
+          "title": "Lord Snow",
+          "duration": "58m",
+          "image": "https://www.indiewire.com/wp-content/uploads/2019/05/game-of-thrones-jon-snow-bran-PUPPIES.jpg?w=800"
+        },
+        {
+          "episode": 4,
+          "title": "Cripples, Bastards, and Broken Things",
+          "duration": "57m",
+          "image": "https://resizing.flixster.com/ajtANROYYdtHssw6m0iLLlSY9Rw=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8681514_b_v8_aa.jpg"
+        },
+        {
+          "episode": 5,
+          "title": "The Wolf and the Lion",
+          "duration": "55m",
+          "image": "https://static01.nyt.com/images/2011/04/10/arts/THRONES-6/THRONES-6-superJumbo-v2.jpg"
+        },
+        {
+          "episode": 6,
+          "title": "A Golden Crown",
+          "duration": "53m",
+          "image": "https://www.indiewire.com/wp-content/uploads/2019/05/game-of-thrones-jon-snow-bran-PUPPIES.jpg?w=800"
+        },
+        {
+          "episode": 7,
+          "title": "You Win or You Die",
+          "duration": "59m",
+          "image": "https://resizing.flixster.com/ajtANROYYdtHssw6m0iLLlSY9Rw=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8681514_b_v8_aa.jpg"
+        },
+        {
+          "episode": 8,
+          "title": "The Pointy End",
+          "duration": "59m",
+          "image": "https://static01.nyt.com/images/2011/04/10/arts/THRONES-6/THRONES-6-superJumbo-v2.jpg"
+        },
+        {
+          "episode": 9,
+          "title": "Baelor",
+          "duration": "57m",
+          "image": "https://www.indiewire.com/wp-content/uploads/2019/05/game-of-thrones-jon-snow-bran-PUPPIES.jpg?w=800"
+        },
+        {
+          "episode": 10,
+          "title": "Fire and Blood",
+          "duration": "62m",
+          "image": "https://resizing.flixster.com/ajtANROYYdtHssw6m0iLLlSY9Rw=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8681514_b_v8_aa.jpg"
+        }
+      ],
+      "2": [
+        {
+          "episode": 1,
+          "title": "The North Remembers",
+          "duration": "53m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/kahl-drogo-episode-1-series-1-game-of-thrones-1613493430.jpg?crop=1.00xw:0.635xh;0,0.0194xh"
+        },
+        {
+          "episode": 2,
+          "title": "The Night Lands",
+          "duration": "54m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMmI1NDY4MzAtMmFhNi00YjZmLTk0NGItNmEyMTQ4MDQ5NGQ0XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+          "episode": 3,
+          "title": "What Is Dead May Never Die",
+          "duration": "53m",
+          "image": "https://akns-images.eonline.com/eol_images/Entire_Site/201251/1024.GoT3.mh.060112.jpg?fit=around%7C776:576&output-quality=90&crop=776:576;center,top"
+        },
+        {
+          "episode": 4,
+          "title": "Garden of Bones",
+          "duration": "51m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/kahl-drogo-episode-1-series-1-game-of-thrones-1613493430.jpg?crop=1.00xw:0.635xh;0,0.0194xh"
+        },
+        {
+          "episode": 5,
+          "title": "The Ghost of Harrenhal",
+          "duration": "55m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMmI1NDY4MzAtMmFhNi00YjZmLTk0NGItNmEyMTQ4MDQ5NGQ0XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+          "episode": 6,
+          "title": "The Old Gods and the New",
+          "duration": "54m",
+          "image": "https://akns-images.eonline.com/eol_images/Entire_Site/201251/1024.GoT3.mh.060112.jpg?fit=around%7C776:576&output-quality=90&crop=776:576;center,top"
+        },
+        {
+          "episode": 7,
+          "title": "A Man Without Honor",
+          "duration": "56m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/kahl-drogo-episode-1-series-1-game-of-thrones-1613493430.jpg?crop=1.00xw:0.635xh;0,0.0194xh"
+        },
+        {
+          "episode": 8,
+          "title": "The Prince of Winterfell",
+          "duration": "53m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMmI1NDY4MzAtMmFhNi00YjZmLTk0NGItNmEyMTQ4MDQ5NGQ0XkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+          "episode": 9,
+          "title": "Blackwater",
+          "duration": "55m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/kahl-drogo-episode-1-series-1-game-of-thrones-1613493430.jpg?crop=1.00xw:0.635xh;0,0.0194xh"
+        },
+        {
+          "episode": 10,
+          "title": "Valar Morghulis",
+          "duration": "64m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMmI1NDY4MzAtMmFhNi00YjZmLTk0NGItNmEyMTQ4MDQ5NGQ0XkEyXkFqcGc@._V1_.jpg"
+        }
+      ],
+      "3": [
+        {
+          "episode": 1,
+          "title": "Valar Dohaeris",
+          "duration": "55m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9uOc2-Qu6_-iOz2XYh0LiAERefbBDLCtnfg&s"
+        },
+        {
+          "episode": 2,
+          "title": "Dark Wings, Dark Words",
+          "duration": "56m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN5UaSzZPi7xD8AD6Aj8LeAsTZcfXGNLz0eg&s"
+        },
+        {
+          "episode": 3,
+          "title": "Walk of Punishment",
+          "duration": "53m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjIzMzU1NjM1MF5BMl5BanBnXkFtZTcwMzIxODg4OQ@@._V1_.jpg"
+        },
+        {
+          "episode": 4,
+          "title": "And Now His Watch Is Ended",
+          "duration": "53m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCHGbP0a16sWGg-YS1BReOkD2zvVTFjbS1g&s"
+        },
+        {
+          "episode": 5,
+          "title": "Kissed by Fire",
+          "duration": "57m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjIzMzU1NjM1MF5BMl5BanBnXkFtZTcwMzIxODg4OQ@@._V1_.jpg"
+        },
+        {
+          "episode": 6,
+          "title": "The Climb",
+          "duration": "53m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCHGbP0a16sWGg-YS1BReOkD2zvVTFjbS1g&s"
+        },
+        {
+          "episode": 7,
+          "title": "The Bear and the Maiden Fair",
+          "duration": "58m",
+          "image": "https://m.media-amazon.com/images/M/MV5BMjIzMzU1NjM1MF5BMl5BanBnXkFtZTcwMzIxODg4OQ@@._V1_.jpg"
+        },
+        {
+          "episode": 8,
+          "title": "Second Sons",
+          "duration": "56m",
+          "image": "https://patricksponaugle.com/wp-content/uploads/2015/06/game-of-thrones-season-3-daenerys-unsullied.jpg"
+        },
+        {
+          "episode": 9,
+          "title": "The Rains of Castamere",
+          "duration": "51m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyCHGbP0a16sWGg-YS1BReOkD2zvVTFjbS1g&s"
+        },
+        {
+          "episode": 10,
+          "title": "Mhysa",
+          "duration": "63m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOxrDL2iUAAIRW5MJZ6j_OWoUfWWlLiO9B0w&s"
+        }
+      ],
+      "4": [
+        {
+          "episode": 1,
+          "title": "Two Swords",
+          "duration": "58m",
+          "image": "https://beam-images.warnermediacdn.com/2025-07/robert-stark-1920.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com&w=600"
+        },
+        {
+          "episode": 2,
+          "title": "The Lion and the Rose",
+          "duration": "51m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2OXoHLjoOcvXQ7Prb1E0jYi6EBerbfMA8A&s"
+        },
+        {
+          "episode": 3,
+          "title": "Breaker of Chains",
+          "duration": "57m",
+          "image": "https://beam-images.warnermediacdn.com/2025-07/robert-stark-1920.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com&w=600"
+        },
+        {
+          "episode": 4,
+          "title": "Oathkeeper",
+          "duration": "54m",
+          "image": "https://i.insider.com/52eff1e06da811780e3e1f62?width=959&format=jpeg"
+        },
+        {
+          "episode": 5,
+          "title": "First of His Name",
+          "duration": "53m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2OXoHLjoOcvXQ7Prb1E0jYi6EBerbfMA8A&s"
+        },
+        {
+          "episode": 6,
+          "title": "The Laws of Gods and Men",
+          "duration": "51m",
+          "image": "https://beam-images.warnermediacdn.com/2025-07/robert-stark-1920.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com&w=600"
+        },
+        {
+          "episode": 7,
+          "title": "Mockingbird",
+          "duration": "50m",
+          "image": "https://i.insider.com/52eff1e06da811780e3e1f62?width=959&format=jpeg"
+        },
+        {
+          "episode": 8,
+          "title": "The Mountain and the Viper",
+          "duration": "52m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY2OXoHLjoOcvXQ7Prb1E0jYi6EBerbfMA8A&s"
+        },
+        {
+          "episode": 9,
+          "title": "The Watchers on the Wall",
+          "duration": "51m",
+          "image": "https://beam-images.warnermediacdn.com/2025-07/robert-stark-1920.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com&w=600"
+        },
+        {
+          "episode": 10,
+          "title": "The Children",
+          "duration": "66m",
+          "image": "https://i.insider.com/52eff1e06da811780e3e1f62?width=959&format=jpeg"
+        }
+      ],
+      "5": [
+        {
+          "episode": 1,
+          "title": "The Wars to Come",
+          "duration": "53m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/arya-stark-episode-1-1613410305.jpg?crop=1xw:0.7498494003597122xh;center,top"
+        },
+        {
+          "episode": 2,
+          "title": "The House of Black and White",
+          "duration": "56m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxBJenRs792cby9zxcdt0-toTUool2NjySw&s"
+        },
+        {
+          "episode": 3,
+          "title": "High Sparrow",
+          "duration": "60m",
+          "image": "https://oyster.ignimgs.com/mediawiki/apis.ign.com/game-of-thrones/5/5b/Robb_stark.jpg"
+        },
+        {
+          "episode": 4,
+          "title": "Sons of the Harpy",
+          "duration": "51m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/arya-stark-episode-1-1613410305.jpg?crop=1xw:0.7498494003597122xh;center,top"
+        },
+        {
+          "episode": 5,
+          "title": "Kill the Boy",
+          "duration": "57m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC3b6Qe53ED4sXbOTP54JjrRespQx6aY4LAQ&s"
+        },
+        {
+          "episode": 6,
+          "title": "Unbowed, Unbent, Unbroken",
+          "duration": "54m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/arya-stark-episode-1-1613410305.jpg?crop=1xw:0.7498494003597122xh;center,top"
+        },
+        {
+          "episode": 7,
+          "title": "The Gift",
+          "duration": "59m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDxBJenRs792cby9zxcdt0-toTUool2NjySw&s"
+        },
+        {
+          "episode": 8,
+          "title": "Hardhome",
+          "duration": "61m",
+          "image": "https://hips.hearstapps.com/hmg-prod/images/arya-stark-episode-1-1613410305.jpg?crop=1xw:0.7498494003597122xh;center,top"
+        },
+        {
+          "episode": 9,
+          "title": "The Dance of Dragons",
+          "duration": "52m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCBfQAOvBdAMiMRVnC4glAyPaBg_fMJaQjOw&s"
+        },
+        {
+          "episode": 10,
+          "title": "Mother's Mercy",
+          "duration": "61m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4nFHwyLIulr7tTmFruABIMkiWDvgoaw1o7A&s"
+        }
+      ],
+      "6": [
+        {
+          "episode": 1,
+          "title": "The Red Woman",
+          "duration": "50m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxGZbgSkdKZtxvG8Bdz8bQW7pvJ7uj96YJew&s"
+        },
+        {
+          "episode": 2,
+          "title": "Home",
+          "duration": "54m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1NQHov6C4B4Y2MvX5FDH5dYJZSbbWo1w01w&s"
+        },
+        {
+          "episode": 3,
+          "title": "Oathbreaker",
+          "duration": "52m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxCzfNbL4sfG9xi841NF5iCqIHEmAqv0Td8g&s"
+        },
+        {
+          "episode": 4,
+          "title": "Book of the Stranger",
+          "duration": "59m",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2016/01/JonSnow.jpg?fit=618%2C412&quality=89&ssl=1"
+        },
+        {
+          "episode": 5,
+          "title": "The Door",
+          "duration": "57m",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2016/01/JonSnow.jpg?fit=618%2C412&quality=89&ssl=1"
+        },
+        {
+          "episode": 6,
+          "title": "Blood of My Blood",
+          "duration": "52m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS13sxeT2Nkrnu_METQGXOXW5TRFqAWY888JQ&s"
+        },
+        {
+          "episode": 7,
+          "title": "The Broken Man",
+          "duration": "51m",
+          "image": "https://ew.com/thmb/ckVYY3SL5k4WCKzLE0KsMU9dWCc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/thrones-004_0-7a8350f1ec62457989c69c08cb4ee1e4.jpg"
+        },
+        {
+          "episode": 8,
+          "title": "No One",
+          "duration": "59m",
+          "image": "https://variety.com/wp-content/uploads/2016/04/maisie-williams-e1460471989648.jpg?w=1000&h=666&crop=1"
+        },
+        {
+          "episode": 9,
+          "title": "Battle of the Bastards",
+          "duration": "60m",
+          "image": "https://i.insider.com/576196dddd089567738b4b6f?width=700"
+        },
+        {
+          "episode": 10,
+          "title": "The Winds of Winter",
+          "duration": "68m",
+          "image": "https://i0.wp.com/www.thewrap.com/wp-content/uploads/2016/01/JonSnow.jpg?fit=618%2C412&quality=89&ssl=1"
+        }
+      ],
+      "7": [
+        {
+          "episode": 1,
+          "title": "Dragonstone",
+          "duration": "59m",
+          "image": "https://media.newyorker.com/photos/598872045839136c88e91dfb/master/w_2560%2Cc_limit/Larson-GoT-Season-7-Episode-4-Recap.jpg"
+        },
+        {
+          "episode": 2,
+          "title": "Stormborn",
+          "duration": "59m",
+          "image": "https://beam-images.warnermediacdn.com/2025-07/daenarys-1920.jpg?host=wbd-dotcom-drupal-prd-us-east-1.s3.amazonaws.com&w=600"
+        },
+        {
+          "episode": 3,
+          "title": "The Queen's Justice",
+          "duration": "63m",
+          "image": "https://images.firstpost.com/wp-content/uploads/2017/08/DFrkDWiWAAE1qzR.jpg"
+        },
+        {
+          "episode": 4,
+          "title": "The Spoils of War",
+          "duration": "50m",
+          "image": "https://media.newyorker.com/photos/598872045839136c88e91dfb/master/w_2560%2Cc_limit/Larson-GoT-Season-7-Episode-4-Recap.jpg"
+        },
+        {
+          "episode": 5,
+          "title": "Eastwatch",
+          "duration": "59m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIppcadqtBCA6MwDGXKJ7wtksIunWPNX4lTw&s"
+        },
+        {
+          "episode": 6,
+          "title": "Beyond the Wall",
+          "duration": "70m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA4vtZGj7IE5odY3LiFbI8xGDtoAGHhP00dQ&s"
+        },
+        {
+          "episode": 7,
+          "title": "The Dragon and the Wolf",
+          "duration": "80m",
+          "image": "https://ew.com/thmb/nnu5LQwQ4ZRQtCmpH0qNoPNws_o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/got3-2000-2f3fed8c4af74a2abe1c17e6e6ff2d50.jpg"
+        }
+      ],
+      "8": [
+        {
+          "episode": 1,
+          "title": "Winterfell",
+          "duration": "54m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0IP6fJZF2esYqo_g25PYraN9dh1Mm87ysLQ&s"
+        },
+        {
+          "episode": 2,
+          "title": "A Knight of the Seven Kingdoms",
+          "duration": "58m",
+          "image": "https://images.hindustantimes.com/rf/image_size_630x354/HT/p2/2019/01/18/Pictures/_3156f4e2-1b31-11e9-b190-a6170a1d34c9.jpg"
+        },
+        {
+          "episode": 3,
+          "title": "The Long Night",
+          "duration": "82m",
+          "image": "https://assets3.thrillist.com/v1/image/2820012/792x552/scale;webp=auto;jpeg_quality=60;progressive.jpg"
+        },
+        {
+          "episode": 4,
+          "title": "The Last of the Starks",
+          "duration": "78m",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGV2GzB9-45XW8fFYSf5Nd_zDAWnAOasLHWw&s"
+        },
+        {
+          "episode": 5,
+          "title": "The Bells",
+          "duration": "80m",
+          "image": "https://m.media-amazon.com/images/M/MV5BZTNlNjQ3YzUtYmI4MS00ZmZiLWI5NzYtZThhOTc1ZjIzNGIxXkEyXkFqcGc@._V1_.jpg"
+        },
+        {
+          "episode": 6,
+          "title": "The Iron Throne",
+          "duration": "80m",
+          "image": "https://www.cnet.com/a/img/resize/433d5f96f1b4a27fc25232f068c5d9bd195a9673/hub/2019/05/20/86f90080-88c5-44ef-87d5-7250852d1557/throneysysyes.png?auto=webp&width=1200"
+        }
+      ]
+    }
+  }
+]

@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>StreamFlix - Premium Streaming Experience</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="container-fluid">
+            <div class="header-wrap">
+                <div class="header-left">
+                    <a href="{{ url_for('index') }}" class="logo">STREAMFLIX</a>
+                    <nav class="desktop-nav">
+                        <ul>
+                            <li><a href="{{ url_for('index') }}" class="active">Home</a></li>
+                            <li><a href="#">TV Shows</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">New & Popular</a></li>
+                            <li><a href="#">Categories</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" class="search-input" placeholder="Search movies, shows...">
+                            <i class="fas fa-times search-close"></i>
+                        </div>
+                        <div class="search-results"></div>
+                    </div>
+                    <div class="nav-item notification-icon">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-dot"></span>
+                    </div>
+                    <div class="user-profile-container">
+                        <div class="nav-item user-profile-trigger" id="userProfileTrigger">
+                            <img src="{{ url_for('static', filename='uploads/' + user.profile_picture) if user.profile_picture != 'default.jpg' else 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80' }}"
+                                alt="User" loading="lazy">
+                            <i class="fas fa-caret-down" id="dropdownArrow"></i>
+                        </div>
+                        <div class="user-dropdown" id="userDropdown">
+                            <a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a>
+                            <a href="{{ url_for('settings') }}"><i class="fas fa-cog"></i> Settings</a>
+                            <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                        </div>
+                    </div>
+                    <div class="hamburger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+    {% if messages %}
+    <div class="flash-messages">
+        {% for category, message in messages %}
+        <div class="flash-message flash-{{ category }}">
+            {{ message }}
+            <button class="flash-close">&times;</button>
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    {% endwith %}
+
+    <div class="mobile-nav-overlay"></div>
+    <nav class="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>Menu</h3>
+            <div class="mobile-nav-close">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <ul>
+            <li><a href="{{ url_for('index') }}" class="active"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="#"><i class="fas fa-tv"></i> TV Shows</a></li>
+            <li><a href="#"><i class="fas fa-film"></i> Movies</a></li>
+            <li><a href="#"><i class="fas fa-fire"></i> New & Popular</a></li>
+            <li><a href="#"><i class="fas fa-th-large"></i> Categories</a></li>
+            <li><a href="#" class="mobile-search-trigger"><i class="fas fa-search"></i> Search</a></li>
+        </ul>
+        <div class="mobile-user-section">
+            <div class="mobile-user-info">
+                <img src="{{ url_for('static', filename='uploads/' + user.profile_picture) if user.profile_picture != 'default.jpg' else 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80' }}"
+                    alt="User" loading="lazy">
+                <div>
+                    <h4>{{ user.name }}</h4>
+                    <p>{{ user.subscription }} Member</p>
+                </div>
+            </div>
+            <div class="mobile-user-links">
+                <a href="{{ url_for('profile') }}"><i class="fas fa-user"></i> Profile</a>
+                <a href="{{ url_for('settings') }}"><i class="fas fa-cog"></i> Settings</a>
+                <a href="{{ url_for('logout') }}"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="movie-carousel-container">
+        <div class="hero-bg" id="heroBg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="content-wrapper">
+            <div class="left-content">
+                <h1 class="movie-title" id="movieTitle">Loading...</h1>
+                <div class="rating-genre">
+                    <div class="rating" id="movieRating">⭐ 0.0/10</div>
+                    <div class="genre-tags" id="genreTags">
+                        <span class="tag">Loading</span>
+                    </div>
+                </div>
+                <div class="duration" id="movieDuration">0h 0m</div>
+                <p class="description" id="movieDescription">Loading description...</p>
+                <div class="cast-crew" id="castCrew">Loading cast...</div>
+                <div class="buttons">
+                    <button class="btn btn-primary"><i class="fas fa-play"></i> Play Now</button>
+                    <button class="btn btn-secondary"><i class="fas fa-plus"></i> Add to List</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop Vertical Slider -->
+        <div class="right-slider" id="rightSlider">
+            <div class="slider-track" id="sliderTrack"></div>
+        </div>
+
+        <!-- Desktop Vertical Navigation -->
+        <div class="vertical-slider-nav" id="verticalSliderNav">
+            <button class="vertical-slider-btn" id="sliderPrevBtn">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+            <button class="vertical-slider-btn" id="sliderNextBtn">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Horizontal Slider Container -->
+        <div class="mobile-right-slider" id="mobileRightSlider">
+            <div class="mobile-slider-track" id="mobileSliderTrack"></div>
+        </div>
+
+        <!-- Mobile Slider Navigation (on sides of slider) -->
+        <div class="mobile-slider-nav" id="mobileSliderNav">
+            <button class="mobile-slider-btn" id="mobileSliderPrevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="mobile-slider-btn" id="mobileSliderNextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Carousel Arrows (Bottom Center) -->
+        <div class="mobile-carousel-arrows">
+            <button class="mobile-arrow-btn prev-arrow" id="mobilePrevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="mobile-arrow-btn next-arrow" id="mobileNextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <div class="main-content-wrapper">
+        <section class="continue-section premium-section">
+            <div class="container-fluid">
+                <div class="section-header premium-header">
+                    <h2 class="section-title">
+                        <i class="fas fa-history text-primary"></i>
+                        Continue Watching
+                    </h2>
+                    <a href="#" class="view-all-link premium-link">
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="continue-container">
+                    <div class="continue-scroll-buttons">
+                        <button class="continue-scroll-btn continue-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button class="continue-scroll-btn continue-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="movies-container" id="continueMoviesContainer"></div>
+                    <div class="continue-scroll-indicator">
+                        <div class="scroll-dots" id="continueScrollDots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container-fluid">
+                <div class="section-header premium-header">
+                    <h2 class="section-title">Upcoming Movies</h2>
+                    <a href="#" class="view-all-link premium-link">
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="swiper-container content-swiper" id="upcoming-slider">
+                    <div class="swiper-wrapper" id="upcoming-wrapper"></div>
+                    <div class="swiper-button-next content-next"></div>
+                    <div class="swiper-button-prev content-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container-fluid">
+                <div class="section-header premium-header">
+                    <h2 class="section-title">Top 10 Movies</h2>
+                    <a href="#" class="view-all-link premium-link">
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="swiper-container content-swiper" id="top-ten-slider">
+                    <div class="swiper-wrapper" id="top-ten-wrapper"></div>
+                    <div class="swiper-button-next content-next"></div>
+                    <div class="swiper-button-prev content-prev"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-section">
+            <div class="container-fluid">
+                <div class="section-header premium-header">
+                    <h2 class="section-title">Browse Categories</h2>
+                    <a href="#" class="view-all-link premium-link">
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1489599809505-7c8e1c8bfc26?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Action" loading="lazy">
+                        <div class="category-name">Action</div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Drama" loading="lazy">
+                        <div class="category-name">Drama</div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Comedy" loading="lazy">
+                        <div class="category-name">Comedy</div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Sci-Fi" loading="lazy">
+                        <div class="category-name">Sci-Fi</div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Horror" loading="lazy">
+                        <div class="category-name">Horror</div>
+                    </div>
+                    <div class="category-card">
+                        <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Romance" loading="lazy">
+                        <div class="category-name">Romance</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="web-series-section" id="webseries">
+            <div class="series-container">
+                <div class="series-header">
+                    <h2 class="series-header-title">Top Web Series</h2>
+                    <div class="series-navigation">
+                        <button class="series-nav-btn series-prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="series-counter">
+                            <span class="series-current" id="currentSeriesNum">1</span>
+                            <span class="series-total">/2</span>
+                        </div>
+                        <button class="series-nav-btn series-next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="series-main-container">
+                    <div class="series-full-bg" id="seriesBg"></div>
+                    <div class="series-full-overlay"></div>
+
+                    <div class="series-info-left">
+                        <div class="series-rank">
+                            <span class="rank-badge">Rank</span>
+                            <span class="rank-number" id="seriesRank"></span>
+                        </div>
+                        <h1 class="series-title" id="seriesTitle">Stranger Things</h1>
+                        <div class="series-meta-info">
+                            <div class="series-rating">
+                                <i class="fas fa-star"></i>
+                                <span id="seriesRating">8.7/10</span>
+                            </div>
+                            <div class="series-year">
+                                <i class="far fa-calendar-alt"></i>
+                                <span id="seriesYear">2016</span>
+                            </div>
+                            <div class="series-seasons">
+                                <i class="fas fa-layer-group"></i>
+                                <span id="seriesSeasons">3 Seasons</span>
+                            </div>
+                            <div class="series-episodes">
+                                <i class="fas fa-play-circle"></i>
+                                <span id="seriesEpisodes">25 Episodes</span>
+                            </div>
+                        </div>
+                        <p class="series-description" id="seriesDescription">
+                            When a young boy vanishes, a small town uncovers a mystery involving secret experiments...
+                        </p>
+                        <div class="series-genres" id="seriesGenres"></div>
+                        <div class="series-actions">
+                            <button class="series-play-btn">
+                                <i class="fas fa-play"></i>
+                                Watch Now
+                            </button>
+                            <button class="btn btn-secondary">
+                                <i class="fas fa-plus"></i>
+                                Add to List
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="series-right-box">
+                        <div class="series-content-box">
+                            <div class="seasons-tabs-section">
+                                <div class="seasons-header">
+                                    <h3>Seasons</h3>
+                                    <div class="seasons-count" id="seasonsCount">3 Seasons</div>
+                                </div>
+                                <div class="seasons-tabs" id="seasonsTabs"></div>
+                            </div>
+
+                            <div class="episodes-list-section">
+                                <div class="episodes-list" id="episodesList"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="live-tv-section">
+            <div class="container-fluid">
+                <div class="section-header premium-header">
+                    <h2 class="section-title">Live TV Channels</h2>
+                    <a href="#" class="view-all-link premium-link">
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="live-channels">
+                    <div class="live-channel">
+                        <img src="https://images.unsplash.com/photo-1593784991095-a205069470b6?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Sports Channel" loading="lazy">
+                        <div class="live-badge">LIVE</div>
+                        <div class="channel-info">
+                            <div class="channel-name">Sports Network</div>
+                            <div class="channel-viewers">12.5K viewers</div>
+                        </div>
+                    </div>
+                    <div class="live-channel">
+                        <img src="https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="News Channel" loading="lazy">
+                        <div class="live-badge">LIVE</div>
+                        <div class="channel-info">
+                            <div class="channel-name">Global News</div>
+                            <div class="channel-viewers">8.2K viewers</div>
+                        </div>
+                    </div>
+                    <div class="live-channel">
+                        <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
+                            alt="Music Channel" loading="lazy">
+                        <div class="live-badge">LIVE</div>
+                        <div class="channel-info">
+                            <div class="channel-name">Music Hits</div>
+                            <div class="channel-viewers">15.7K viewers</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending-section">
+            <div class="container-fluid">
+                <div class="section-header premium-header">
+                    <h2 class="section-title">Trending Now</h2>
+                    <a href="#" class="view-all-link premium-link">
+                        View All
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="trending-tabs">
+                    <div class="trending-tab active" data-tab="today">Today</div>
+                    <div class="trending-tab" data-tab="week">This Week</div>
+                    <div class="trending-tab" data-tab="month">This Month</div>
+                </div>
+                <div class="trending-content active" id="today">
+                    <div class="swiper-container content-swiper" id="trending-today-slider">
+                        <div class="swiper-wrapper" id="trending-today-wrapper"></div>
+                        <div class="swiper-button-next content-next"></div>
+                        <div class="swiper-button-prev content-prev"></div>
+                    </div>
+                </div>
+                <div class="trending-content" id="week">
+                    <div class="swiper-container content-swiper" id="trending-week-slider">
+                        <div class="swiper-wrapper" id="trending-week-wrapper"></div>
+                        <div class="swiper-button-next content-next"></div>
+                        <div class="swiper-button-prev content-prev"></div>
+                    </div>
+                </div>
+                <div class="trending-content" id="month">
+                    <div class="swiper-container content-swiper" id="trending-month-slider">
+                        <div class="swiper-wrapper" id="trending-month-wrapper"></div>
+                        <div class="swiper-button-next content-next"></div>
+                        <div class="swiper-button-prev content-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="main-footer">
+        <div class="neon-grid"></div>
+        <div class="container-fluid">
+            <div class="footer-top">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <a href="{{ url_for('index') }}" class="footer-logo">STREAMFLIX</a>
+                        <p class="footer-text">
+                            Email us: <a href="mailto:customer@streamflix.com"
+                                class="text-primary">customer@streamflix.com</a>
+                        </p>
+                        <p class="footer-text">
+                            CUSTOMER SERVICES<br>
+                            <strong class="text-white">+(480) 555-0103</strong>
+                        </p>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="footer-heading">Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Pricing Plan</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="footer-heading">Movies to Watch</h4>
+                        <ul class="footer-links">
+                            <li><a href="#">Top Trending</a></li>
+                            <li><a href="#">Recommended</a></li>
+                            <li><a href="#">Popular</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h4 class="footer-heading">About Company</h4>
+                        <ul class="footer-links">
+                            <li><a href="{{ url_for('login') }}">Login</a></li>
+                            <li><a href="{{ url_for('register') }}">Register</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <h4 class="footer-heading">Subscribe Newsletter</h4>
+                        <div class="subscribe-form">
+                            <input type="email" placeholder="Email*">
+                            <button class="btn btn-primary">Subscribe</button>
+                        </div>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="copyright">© 2025 <span class="text-primary">STREAMFLIX</span>. All Rights Reserved.
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-right">
+                        <div class="app-links">
+                            <a href="#"><img
+                                    src="https://templates.iqonic.design/streamit-dist/frontend/html/images/footer/01.jpg"
+                                    alt="Google Play" loading="lazy"></a>
+                            <a href="#"><img
+                                    src="https://templates.iqonic.design/streamit-dist/frontend/html/images/footer/02.jpg"
+                                    alt="App Store" loading="lazy"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTopBtn" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+        // Flash messages auto-close
+        document.querySelectorAll('.flash-close').forEach(button => {
+            button.addEventListener('click', function () {
+                this.parentElement.remove();
+            });
+        });
+
+        setTimeout(() => {
+            document.querySelectorAll('.flash-message').forEach(msg => {
+                msg.remove();
+            });
+        }, 5000);
+    </script>
+</body>
+
+</html>

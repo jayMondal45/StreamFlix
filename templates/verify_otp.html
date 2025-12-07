@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamFlix - Verify OTP</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/auth.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="auth-page">
+    <!-- Flash messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div class="flash-messages">
+                {% for category, message in messages %}
+                    <div class="flash-message flash-{{ category }}">
+                        {{ message }}
+                        <button class="flash-close">&times;</button>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
+
+    <div class="movie-grid">
+        {% for i in range(24) %}
+        <div class="movie-poster"></div>
+        {% endfor %}
+    </div>
+
+    <div class="login_logo">STREAMFLIX</div>
+
+    <div class="auth-container" id="verifyOtpForm">
+        <h1>Verify OTP</h1>
+        <p class="info-text">
+            We've sent a 6-digit OTP to <strong>{{ email }}</strong>. Enter it below to reset your password.
+        </p>
+        <form method="POST" action="{{ url_for('verify_otp') }}">
+            <div class="form-group">
+                <input type="text" id="otp" name="otp" placeholder="Enter 6-digit OTP" required maxlength="6" pattern="\d{6}">
+            </div>
+            <button type="submit" class="btn-primary">Verify OTP</button>
+        </form>
+        <div class="auth-switch">
+            <a href="{{ url_for('forgot_password') }}">Try another email</a>
+        </div>
+    </div>
+
+    <script>
+        // Auto-close flash messages
+        document.querySelectorAll('.flash-close').forEach(button => {
+            button.addEventListener('click', function() {
+                this.parentElement.remove();
+            });
+        });
+        
+        setTimeout(() => {
+            document.querySelectorAll('.flash-message').forEach(msg => {
+                msg.remove();
+            });
+        }, 5000);
+        
+        // Auto-focus OTP input
+        document.getElementById('otp').focus();
+    </script>
+</body>
+</html>
