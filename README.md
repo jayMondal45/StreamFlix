@@ -29,7 +29,6 @@
 - [Usage](#usage)
 - [API Endpoints](#api-endpoints)
 - [Database Schema](#database-schema)
-- [Screenshots](#screenshots)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
 - [License](#license)
@@ -468,19 +467,6 @@ class User(UserMixin, db.Model):
 
 ---
 
-## 📸 Screenshots
-
-### Desktop Views
-*[Add screenshots of desktop home page, profile, settings]*
-
-### Mobile Views
-*[Add screenshots of mobile responsive design]*
-
-### Authentication Flow
-*[Add screenshots of login, register, OTP verification]*
-
----
-
 ## 🗺️ Roadmap
 
 ### Completed Features ✅
@@ -629,7 +615,7 @@ SOFTWARE.
 - GitHub: [@jaymondal45](https://github.com/jaymondal45)
 - Email: jaymondals953@gmail.com
 - LinkedIn: [Jay Mondal](https://www.linkedin.com/in/jaymondal45)
-- Website: [https://jaymondal45.github.io/StreamFlix/](https://jaymondal45.github.io/StreamFlix/)
+- Website: https://jaymondal45.github.io/StreamFlix-Website/
 
 **Project Link:** [https://github.com/jaymondal45/StreamFlix](https://github.com/jaymondal45/StreamFlix)
 
